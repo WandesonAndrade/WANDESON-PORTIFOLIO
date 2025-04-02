@@ -16,6 +16,7 @@ export function ContactForm() {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Formulário enviado:", formData);
