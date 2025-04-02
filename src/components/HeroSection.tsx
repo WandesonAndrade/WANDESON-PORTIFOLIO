@@ -6,7 +6,7 @@ const HereoSection = () => {
           <img
             src="public/wandeson.jpeg"
             alt="Perfil"
-            className="w-32 h-32 rounded-full mb-6 object-cover"
+            className="w-32 h-32 rounded-full mb-6 object-scale-down"
           />
           <h1 className="text-4xl font-bold mb-4">Wandeson Andrade</h1>
           <h2 className="text-xl text-gray-600 dark:text-gray-400 mb-6">
