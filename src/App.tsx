@@ -1,30 +1,15 @@
-import { Navbar } from "./components/Navbar";
-import HereoSection from "./components/HeroSection";
-import ProjectsSection from "./components/ProjectsSection";
-import TechnologiesSection from "./components/TechnologiesSection";
-import EducationSection from "./components/EducationSection";
-import Contactsection from "./components/ContactSection";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/home";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
-      <Navbar />
-
-      {/* Seção Sobre Mim */}
-      <HereoSection />
-
-      {/* Seção Projetos */}
-      <ProjectsSection />
-
-      {/* Seção Formação */}
-      <EducationSection />
-
-      {/* Seção Tecnologias */}
-      <TechnologiesSection />
-
-      {/* Seção Contato */}
-      <Contactsection />
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

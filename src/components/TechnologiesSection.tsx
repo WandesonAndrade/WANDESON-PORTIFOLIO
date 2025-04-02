@@ -3,7 +3,7 @@ import { technologies } from "../data/technologies";
 
 const TechnologiesSection = () => {
   return (
-    <section id="technologies" className="py-16 px-4 bg-white dark:bg-gray-800">
+    <section id="tecnologias" className="py-16 px-4 bg-white dark:bg-gray-800">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold mb-12 text-center">Tecnologias</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

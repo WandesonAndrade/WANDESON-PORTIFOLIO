@@ -30,7 +30,8 @@ export function ContactForm() {
 
   return (
     <form
-      onSubmit={handleSubmit}
+      action="https://formsubmit.co/wandesonaandrade@gmail.com"
+      method="POST"
       className="max-w-lg mx-auto space-y-6  p-6 rounded-lg "
     >
       <div>
@@ -43,6 +44,7 @@ export function ContactForm() {
         <input
           type="text"
           id="nome"
+          name="nome"
           required
           placeholder="Digite seu nome"
           className="mt-1 block w-full rounded-md border-gray-100 dark:border-gray-600 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:text-white p-2"
@@ -61,6 +63,7 @@ export function ContactForm() {
         <input
           type="email"
           id="email"
+          name="email"
           required
           placeholder="Digite seu e-mail"
           className="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:text-white p-2"
@@ -78,6 +81,7 @@ export function ContactForm() {
         </label>
         <textarea
           id="mensagem"
+          name="mensagem"
           required
           rows={4}
           placeholder="Digite sua mensagem"

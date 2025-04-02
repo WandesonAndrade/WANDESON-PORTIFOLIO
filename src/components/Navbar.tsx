@@ -1,34 +1,46 @@
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
+import { Link, useLocation } from "react-router-dom";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["Sobre", "Projetos", "Educação", "Tecnologias", "Contato"];
+  const navItems = ["Sobre", "Projetos", "Formação", "Tecnologias", "Contato"];
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <nav className="fixed w-full bg-white dark:bg-gray-900 shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <a
-              href="#"
+            <Link
+              to="/#sobre"
               className="text-xl font-bold text-gray-900 dark:text-white"
             >
               Portfólio
-            </a>
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                to={`/#${item.toLowerCase()}`}
                 className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 {item}
-              </a>
+              </Link>
             ))}
             <ThemeToggle />
           </div>

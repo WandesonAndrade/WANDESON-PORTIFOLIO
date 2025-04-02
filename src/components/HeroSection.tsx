@@ -1,6 +1,6 @@
 const HereoSection = () => {
   return (
-    <section id="about" className="pt-20 pb-16 px-4">
+    <section id="sobre" className="pt-20 pb-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center text-center">
           <img

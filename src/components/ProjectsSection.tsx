@@ -3,7 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-16 px-4 bg-white dark:bg-gray-800">
+    <section id="projetos" className="py-16 px-4 bg-white dark:bg-gray-800">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold mb-12 text-center">
           Projetos em Destaque
