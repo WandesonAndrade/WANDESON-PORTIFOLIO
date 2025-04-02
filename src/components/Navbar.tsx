@@ -6,7 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["Sobre", "Projetos", "Formação", "Tecnologias", "Contato"];
+  const navItems = ["Sobre", "Projetos", "Ensino", "Tecnologias", "Contato"];
   const location = useLocation();
 
   useEffect(() => {
