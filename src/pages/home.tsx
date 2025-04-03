@@ -1,5 +1,5 @@
-import Contactsection from "../components/ContactSection";
 import EducationSection from "../components/EducationSection";
+import Footer from "../components/Footer";
 import HereoSection from "../components/HeroSection";
 import { Navbar } from "../components/Navbar";
 import ProjectsSection from "../components/ProjectsSection";
@@ -22,8 +22,8 @@ const HomePage = () => {
       {/* Seção Tecnologias */}
       <TechnologiesSection />
 
-      {/* Seção Contato */}
-      <Contactsection />
+      {/* Rodapé */}
+      <Footer />
     </div>
   );
 };

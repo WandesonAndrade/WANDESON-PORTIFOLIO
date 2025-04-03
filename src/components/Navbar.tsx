@@ -6,7 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["Sobre", "Projetos", "Ensino", "Tecnologias", "Contato"];
+  const navItems = ["Sobre", "Projetos", "Ensino", "Tecnologias"];
   const location = useLocation();
 
   useEffect(() => {
@@ -42,6 +42,12 @@ export function Navbar() {
                 {item}
               </Link>
             ))}
+            <Link
+              to="/contact"
+              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            >
+              Contato
+            </Link>
             <ThemeToggle />
           </div>
 
