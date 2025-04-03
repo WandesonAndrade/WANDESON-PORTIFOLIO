@@ -4,7 +4,7 @@ const HereoSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center text-center">
           <img
-            src="public/wandeson.jpeg"
+            src="https://raw.githubusercontent.com/WandesonAndrade/WANDESON-PORTIFOLIO/refs/heads/main/public/wandeson.jpeg"
             alt="Perfil"
             className="w-32 h-32 rounded-full mb-6 object-scale-down"
           />
