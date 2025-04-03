@@ -4,11 +4,15 @@ import HereoSection from "../components/HeroSection";
 import { Navbar } from "../components/Navbar";
 import ProjectsSection from "../components/ProjectsSection";
 import TechnologiesSection from "../components/TechnologiesSection";
+import Whats from "../components/Whats.component";
 
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
       <Navbar />
+
+      {/* WhatsApp */}
+      <Whats />
 
       {/* Seção Sobre Mim */}
       <HereoSection />

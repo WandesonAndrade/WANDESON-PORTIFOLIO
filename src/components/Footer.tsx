@@ -5,25 +5,25 @@ const Footer = () => {
   const navItems = ["Sobre", "Projetos", "Ensino", "Tecnologias"];
 
   return (
-    <footer className=" py-12">
+    <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Links de navegação */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Links Rápidos</h4>
-            <nav className="hidden md:flex items-center space-x-6">
+            <nav className="flex flex-wrap justify-center md:justify-start gap-4">
               {navItems.map((item) => (
                 <Link
                   key={item}
                   to={`/#${item.toLowerCase()}`}
-                  className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
                 >
                   {item}
                 </Link>
               ))}
               <Link
                 to="/contact"
-                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="text-gray-300 hover:text-blue-400 transition-colors"
               >
                 Contato
               </Link>
@@ -55,7 +55,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className=" hover:text-orange-300 transition"
+                className="hover:text-orange-300 transition"
               >
                 <Github className="w-6 h-6" />
               </a>
@@ -64,7 +64,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className=" hover:text-blue-500 transition"
+                className="hover:text-blue-500 transition"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
 
         {/* Rodapé */}
-        <div className="border-t border-gray-800  mt-8 pt-6 text-center ">
+        <div className="border-t border-gray-800 mt-8 pt-6 text-center text-gray-400">
           <p>&copy; 2024 Wandeson Andrade. Todos os direitos reservados.</p>
         </div>
       </div>

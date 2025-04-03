@@ -15,6 +15,22 @@ const EducationSection = () => {
             </div>
             <p className="text-gray-600 dark:text-gray-400">FACEMA</p>
           </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+            <div className="flex items-center mb-4">
+              <GraduationCap className="w-6 h-6 mr-3 text-blue-600 dark:text-blue-400" />
+              <h3 className="text-xl font-semibold">Code Start</h3>
+            </div>
+            <p className="text-gray-600 dark:text-gray-400">FULL STACK CLUB</p>
+          </div>
+
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+            <div className="flex items-center mb-4">
+              <GraduationCap className="w-6 h-6 mr-3 text-blue-600 dark:text-blue-400" />
+              <h3 className="text-xl font-semibold">React PRO</h3>
+            </div>
+            <p className="text-gray-600 dark:text-gray-400">FULL STACK CLUB</p>
+          </div>
         </div>
       </div>
     </section>
